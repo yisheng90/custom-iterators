@@ -77,10 +77,8 @@ function _every (arr, callback) {
     }
   }
 
-  if (status === true) {
-    console.log(arr)
-  }
+  return status
 }
 
-_every([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], moreThan5)
-_every([8, 9, 10], moreThan5)
+console.log(_every([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], moreThan5))
+console.log(_every([8, 9, 10], moreThan5))
